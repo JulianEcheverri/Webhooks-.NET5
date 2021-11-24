@@ -25,6 +25,10 @@
 - dotnet add package RabbitMQ.Client
 - dotnet add package Microsoft.Extensions.DependencyInjection
 - dotnet add package Microsoft.Extensions.Http
+- dotnet tool install --global dotnet-ef
+- dotnet tool update --global dotnet-ef
+- dotnet ef migrations add WebhokkInitialMigration
+- dotnet ef database update
 
 ### Docker Compose
 - docker-compose up -d
