@@ -16,3 +16,10 @@
 - dotnet --version
 - dotnet new
 - dotnet new webapi -n {name}
+- dotnet run
+- dotnet dev-certs https --trust
+- dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
+- dotnet add package Microsoft.EntityFrameworkCore --version 5.0.12
+- dotnet add package Microsoft.EntityFrameworkCore.Design -v 5.0.12
+- dotnet add package Microsoft.EntityFrameworkCore.SqlServer -v 5.0.12
+- dotnet add package RabbitMQ.Client
