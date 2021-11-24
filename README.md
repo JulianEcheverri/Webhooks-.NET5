@@ -23,3 +23,5 @@
 - dotnet add package Microsoft.EntityFrameworkCore.Design -v 5.0.12
 - dotnet add package Microsoft.EntityFrameworkCore.SqlServer -v 5.0.12
 - dotnet add package RabbitMQ.Client
+- dotnet add package Microsoft.Extensions.DependencyInjection
+- dotnet add package Microsoft.Extensions.Http
