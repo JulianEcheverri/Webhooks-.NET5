@@ -25,3 +25,6 @@
 - dotnet add package RabbitMQ.Client
 - dotnet add package Microsoft.Extensions.DependencyInjection
 - dotnet add package Microsoft.Extensions.Http
+
+### Docker Compose
+- docker-compose up -d
