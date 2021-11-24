@@ -2,3 +2,5 @@
 .vscode/tasks.json
 AirlineWeb/bin
 AirlineWeb/obj
+AirlineSendAgent/bin
+AirlineSendAgent/obj
