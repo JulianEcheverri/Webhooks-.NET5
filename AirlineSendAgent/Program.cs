@@ -1,5 +1,4 @@
-﻿using System;
-using AirlineSendAgent.App;
+﻿using AirlineSendAgent.App;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
