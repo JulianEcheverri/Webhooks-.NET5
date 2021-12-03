@@ -1,4 +1,7 @@
 ﻿using AirlineSendAgent.App;
+using AirlineSendAgent.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -10,9 +13,10 @@ namespace AirlineSendAgent
         {
             var host = Host
             .CreateDefaultBuilder()
-            .ConfigureServices((ContextBoundObject, services) =>
+            .ConfigureServices((context, services) =>
             {
                 services.AddSingleton<IAppHost, AppHost>();
+                services.AddDbContext<SendAgentDbContext>(options => options.UseSqlServer(context.Configuration.GetConnectionString("AirlineConnection")));
             })
             .Build();
 
