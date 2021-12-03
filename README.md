@@ -29,6 +29,7 @@
 - dotnet tool update --global dotnet-ef
 - dotnet ef migrations add WebhokkInitialMigration
 - dotnet ef database update
+- dotnet add package Microsoft.Extensions.Hosting --version 6.0.0
 
 ### Docker Compose
 - docker-compose up -d
