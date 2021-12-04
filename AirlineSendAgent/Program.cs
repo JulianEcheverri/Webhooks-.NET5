@@ -17,6 +17,7 @@ namespace AirlineSendAgent
             {
                 services.AddSingleton<IAppHost, AppHost>();
                 services.AddDbContext<SendAgentDbContext>(options => options.UseSqlServer(context.Configuration.GetConnectionString("AirlineConnection")));
+                services.AddHttpClient();
             })
             .Build();
 
